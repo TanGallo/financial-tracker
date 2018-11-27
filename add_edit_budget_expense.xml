@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/budgetExpenseCategoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Enter an expense category"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/budgetExpenseCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/budgetExpenseAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Amount"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/budgetExpenseAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="numberDecimal"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/budgetExpenseFrequencyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="How often?"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/budgetExpenseFrequencyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseWeeklyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly (52 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseBiWeeklyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Every 2 weeks (26 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseBiMonthlyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twice a month (24 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseMonthlyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Once a month (12 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseBiAnnuallyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twice a year"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseAnnuallyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Once a year"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/debt_header_layout"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:alpha=".5"
+                android:background="@color/colorPrimary"></View>
+
+            <RadioGroup
+                android:id="@+id/budgetExpenseABRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseARadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="This expense is for needs (i.e. food, rent, insurance, etc)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseBRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This expense is optional (i.e. entertainment, gifts, clothing, etc)"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/debt_header_layout"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:alpha=".5"
+                android:background="@color/colorPrimary"></View>
+
+            <TextView
+                android:id="@+id/weeklyGuidanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="16sp"
+                android:text="Do you want this category added to the weekly guidelines to help you stay within your spending limits?"
+                />
+
+            <RadioGroup
+                android:id="@+id/budgetExpenseReminderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseYesRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="Yes: I spend on this frequently and would like to be reminded of my limits"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetExpenseNoRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No: This is an occasional expense and I don't need weekly guidance"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/budgetCancelExpenseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="cancel" />
+
+                <Button
+                    android:id="@+id/budgetAddExpenseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="add" />
+
+                <Button
+                    android:id="@+id/budgetUpdateExpenseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="update" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

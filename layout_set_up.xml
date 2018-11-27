@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".LayoutSetUp"
+    tools:openDrawer="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <FrameLayout
+            android:id="@+id/set_up_layout_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/set_up_header_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/getStartedLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"
+                            android:text="Let's get started!"
+                            android:textSize="22sp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/debt_header_layout"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:alpha=".5"
+                            android:background="@color/colorPrimary"></View>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="10dp"
+                                android:text="DONE"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/setUpDebtsButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="click here to enter your debts" />
+
+                            <TextView
+                                android:id="@+id/setUpDebtsLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Enter debts"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/setUpDebtsCheckbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="10dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/setUpSavingsButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="click here to enter your savings" />
+
+                            <TextView
+                                android:id="@+id/setUpSavingsLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Enter savings"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/setUpSavingsCheckbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="10dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/setUpBudgetButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="click here to finish making your budget" />
+
+                            <TextView
+                                android:id="@+id/setUpBudgetLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Finish budget"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/setUpBudgetCheckbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="10dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/setUpAccountAmountLabel3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Starting Balance"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/setUpAccountAmountLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="How much money is in your bank account to start?"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/setUpAccountAmountLabel2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/setUpAccountAmountLabel"
+                                android:layout_marginStart="10dp"
+                                android:text="(Check the box once you've entered an amount below)"
+                                android:textSize="16sp" />
+
+                            <EditText
+                            android:id="@+id/setUpAccountAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/setUpAccountAmountLabel2"
+                            android:layout_marginStart="10dp"
+                            android:layout_toStartOf="@id/setUpAccountCheckbox"
+                            android:gravity="fill_horizontal"
+                            android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/setUpAccountAmountResult"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/setUpAccountAmountLabel3"
+                                android:layout_marginStart="10dp"
+                                android:layout_toStartOf="@id/setUpAccountCheckbox"
+                                android:gravity="fill_horizontal"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/setUpAccountCheckbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/setUpAccountAmountLabel2"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="10dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/almostDone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:text="Almost done!"
+                            android:textSize="22sp" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/setUpTourLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Now you can manage your money in just a few minutes a day!"
+                                android:textSize="16sp" />
+
+                            <TextView
+                            android:id="@+id/setUpTourLabel2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/setUpTourLabel"
+                            android:text="Go to 'Daily Money' to make income and spending entries, to track your credit card transactions, and to watch your weekly spending limits"
+                            android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/setUpTourLabel3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_below="@id/setUpTourLabel2"
+                                android:text="MYnance will show you how much money in your bank account is actually available to spend at any given time"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/setUpTourLabel4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_below="@id/setUpTourLabel3"
+                                android:text="Go to 'Help' if you need more guidance"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/setUpGotItLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_below="@id/setUpTourLabel4"
+                                android:text="Check the box when you're ready to start!"
+                                android:textSize="16sp" />
+
+                            <CheckBox
+                                android:id="@+id/setUpTourCheckbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@id/setUpTourLabel4"
+                                android:layout_margin="10dp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

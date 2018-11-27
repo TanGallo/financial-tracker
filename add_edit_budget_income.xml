@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/budgetIncomeCategoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Enter an income category"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/budgetIncomeCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/budgetIncomeAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Amount"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/budgetIncomeAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="numberDecimal"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/budgetIncomeFrequencyLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="How often?"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/budgetIncomeFrequencyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RadioButton
+                    android:id="@+id/budgetIncomeWeeklyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly (52 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetIncomeBiWeeklyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Every 2 weeks (26 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetIncomeBiMonthlyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twice a month (24 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetIncomeMonthlyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Once a month (12 times/yr)"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetIncomeBiAnnuallyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twice a year"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/budgetIncomeAnnuallyRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Once a year"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/budgetCancelIncomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="cancel" />
+
+                <Button
+                    android:id="@+id/budgetAddIncomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="add" />
+
+                <Button
+                    android:id="@+id/budgetUpdateIncomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="update" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
