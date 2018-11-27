@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MYnance</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="daily_money">Daily Money</string>
+    <string name="budget">Budget</string>
+    <string name="debt">Debt</string>
+    <string name="savings">Savings</string>
+    <string name="reminders">Reminders</string>
+    <string name="email_address">gotchasomething.ca@gmail.com</string>
+    <string name="mynance">MYnance</string>
+    <string name="logo">Logo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="too_far">Too far in the future</string>
+    <string name="goal_achieved">Goal achieved!</string>
+    <string name="goal_will">Will be saved by </string>
+    <string name="debt_paid">Debt paid!</string>
+    <string name="debt_will">Will be paid by </string>
+    <string name="initial_set_up">initial Set Up</string>
+    <string name="slide1Title">Welcome to MYnance!</string>
+    <string name="slide1Description">Manage your money and keep on top of your debt in just a few steps</string>
+    <string name="slide2Title">Step 1:</string>
+    <string name="slide2Description">Simply follow the quick list in the guided set up process</string>
+    <string name="next_button">next</string>
+    <string name="start_button">Got it!</string>
+    <string name="my_preference">ca.gotchasomething.ca.MyPref</string>
+    <string name="my_preference_key">ca.gotchasomething.ca.MyPrefKey</string>
+    <string name="skip_button">skip intro</string>
+    <string name="slide3Title">Step 2:</string>
+    <string name="slide3Description">Go to \'Daily Money\' to make income and spending entries, track your credit card transactions, and watch your weekly spending limits</string>
+    <string name="slide4Title">MYnance will let you know how much money in your bank account is actually available for spending at any given time</string>
+    <string name="slide5Title">MYnance will help you keep on top of your credit card spending so you avoid getting into consumer debt</string>
+    <string name="slide6Title">Visit the \'Help\' section if you need more guidance</string>
+</resources>
