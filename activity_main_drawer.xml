@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_daily_money"
+        android:icon="@drawable/ic_account_balance_white_24dp"
+        android:title="@string/daily_money" />
+    <item
+        android:id="@+id/menu_budget"
+        android:icon="@drawable/ic_equalizer_black_24dp"
+        android:title="@string/budget" />
+    <item
+        android:id="@+id/menu_debt"
+        android:icon="@drawable/ic_payment_black_24dp"
+        android:title="@string/debt" />
+    <item
+        android:id="@+id/menu_savings"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:title="@string/savings" />
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/ic_help_outline_black_24dp"
+        android:title="Help" />
+    <item
+        android:id="@+id/menu_edit_entries"
+        android:icon="@drawable/ic_trending_up_black_24dp"
+        android:title="Edit Entries:">
+        <menu>
+            <item
+                android:id="@+id/menu_spending_entries"
+                android:title="Spending Entries" />
+            <item
+                android:id="@+id/menu_income_entries"
+                android:title="Income Entries" />
+
+        </menu>
+    </item>
+
+
+</menu>
